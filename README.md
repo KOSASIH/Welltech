@@ -1,3 +1,94 @@
+# Welltech - Mental Health and Well-being Platforms Microservice App
+
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Supported Platforms](#supported-platforms)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Welltech is a Mental Health and Well-being Platforms microservice app that aims to provide comprehensive mental health support and well-being resources to individuals and organizations. The app offers a set of microservices that enable mental health professionals, therapists, and users to connect, access resources, and foster mental wellness.
+
+## Features
+
+- User Profile and Assessments: Welltech allows users to create profiles, complete mental health assessments, and receive personalized well-being recommendations.
+- Teletherapy and Virtual Counseling: Access video conferencing and messaging tools for virtual counseling and therapy sessions with licensed professionals.
+- Mental Health Resources: Welltech provides a library of mental health articles, guided meditations, exercises, and self-help resources.
+- Support Groups: Join virtual support groups and community forums to connect with others and share experiences in a safe environment.
+- Multi-platform Support: Welltech is designed to work across various platforms, including web browsers, Android, and iOS.
+- Scalable Architecture: The microservice architecture ensures scalability and flexibility to accommodate growing mental health communities.
+
+## Installation
+
+To install and use Welltech, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/welltech-app/welltech.git`
+2. Install dependencies: `npm install`
+3. Configure the environment variables: Copy `.env.example` to `.env` and set the necessary configuration parameters.
+4. Start the microservices: `npm start`
+
+## Usage
+
+Welltech provides a RESTful API for communication with the microservices. Here's a basic example of how to use Welltech in your application:
+
+```javascript
+import axios from 'axios';
+
+const baseURL = 'https://api.welltech.com';
+
+// Example API call to retrieve mental health resources
+async function getMentalHealthResources() {
+  try {
+    const response = await axios.get(`${baseURL}/resources`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching mental health resources:', error);
+    throw error;
+  }
+}
+```
+
+For more detailed usage instructions and API endpoints, please refer to the [API Documentation](#api-documentation).
+
+## API Documentation
+
+For detailed information on the available API endpoints and their usage, please refer to the [API documentation](https://api.welltech.com/docs).
+
+## Supported Platforms
+
+Welltech is accessible across various platforms, ensuring users can access well-being resources and support from multiple devices, including:
+
+- Web Browsers (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge)
+- Android Mobile Devices (Minimum version: Android 6.0 Marshmallow)
+- iOS Devices (Minimum version: iOS 12)
+
+## Contributing
+
+We welcome contributions from the community! To contribute to Welltech, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Add feature"`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request.
+
+Please ensure that you've read and adhered to our [Code of Conduct](https://welltech.com/code-of-conduct) before contributing.
+
+## License
+
+Welltech is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+Feel free to customize this README file with additional information about your app, team, and development process. Good luck with your Welltech project! If you have any other questions or need further assistance, feel free to ask.
+
 # Welltech
 
 This application was generated using JHipster 8.0.0-beta.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.0.0-beta.2](https://www.jhipster.tech/documentation-archive/v8.0.0-beta.2).
