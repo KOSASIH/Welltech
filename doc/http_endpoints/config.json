@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "name": "Id",
+    "description": "",
+    "method": "GET",
+    "endpoint": "/doc",
+    "data_source": {
+      "cluster_id": 1379661944646198969
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "tag": "Default",
+    "batch_operation": 0,
+    "sql_file": "sql/GET-doc.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  }
+]
